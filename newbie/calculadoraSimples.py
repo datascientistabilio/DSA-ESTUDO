@@ -11,10 +11,10 @@ def calculadoraBasica():
         num1 = 0
         num2 = 0
         #menu
-        #Não converto neste momento, pois preciso ter certeza que o valor é um numero, então eu recebo valor e faço a verificação
-        #nas linhas 20 a 25, caso seja uma string, fica preso no loop até receber um numero.
+        #Não converto neste momento, pois preciso ter certeza que o valor é um numero, então eu recebo valor e faço a verificação com a função validacao()
         op = input('\n 1 - Somar\n 2 - Subtração\n 3 - Multiplicação\n 4 - Divisão\n 5 - Sair\n')
         
+        #validação para tratar se é um numero ou string
         op = validacao(op)
                 
         if(int(op) ==1):#soma
