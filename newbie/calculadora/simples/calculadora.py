@@ -1,9 +1,8 @@
 ##Desenvolvido por Abilio com os conteúdos aprendidos nas aulas do curso Pythom Fundamentos.
 #28-08-2020
-#VERSÃO: 0.0.0.3
+#VERSÃO: 0.0.0.4
 def calculadoraBasica():
-    print('Seja bem vindo a Calculadora Simples')
-    op=0
+        op=0
     
     #enquanto for diferente de 5 executa o loop
     while int(op) !=5:
@@ -12,7 +11,16 @@ def calculadoraBasica():
         num2 = 0
         #menu
         #Não converto neste momento, pois preciso ter certeza que o valor é um numero, então eu recebo valor e faço a verificação com a função validacao()
-        op = input('\n 1 - Somar\n 2 - Subtração\n 3 - Multiplicação\n 4 - Divisão\n 5 - Sair\n')
+        
+        #op = input('\n 1 - Somar\n 2 - Subtração\n 3 - Multiplicação\n 4 - Divisão\n 5 - Sair\n') 
+        
+        #Outra opção interessante em vez dos \n classicos
+        op = input("""\calculadora simples #Um nome
+                        1 - Somar
+                        2 - Subtração
+                        3 - Multiplicação
+                        4 - Divisão
+                        5 - Sair""")
         
         #validação para tratar se é um numero ou string
         op = validacao(op)
